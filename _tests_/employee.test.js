@@ -34,7 +34,7 @@ describe("Employee", () => {
         const cb = () => new Employee("Sarah", 2);
   
         // Define the error message that is expected to be thrown
-        const err = new Error("Expected parameter 'email' to be a non-negative number");
+        const err = new Error("Expected parameter 'email' to be a non-empty string");
   
         // Verify that the correct error was thrown when the callback is executed
         expect(cb).toThrowError(err);
@@ -49,7 +49,7 @@ describe("Employee", () => {
 
       it("should throw an error if 'id' is not a number", () => {
         const cb = () => new Employee("Sarah", "2");
-        const err = new Error("Expected parameter 'aid' to be a non-negative number");
+        const err = new Error("Expected parameter 'id' to be a non-negative number");
   
         expect(cb).toThrowError(err);
       });
