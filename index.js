@@ -1,8 +1,7 @@
-const inquirer = require("inquirer");
+const Team = require('./lib/team');
 
-// import custom modules
-const Employee = require("./lib/employee");
-const Manager = require("./lib/manager");
-const Engineer = require("./lib/engineer");
-const Intern = require("./lib/intern");
+const team = new Team();
 
+team.create();
+
+// console.log(team.members)
