@@ -5,15 +5,14 @@ const team = new Team();
 
 const createTeam = async () => {
     await team.create();
-    console.log(team.members);
+    let html = ""
+    team.members.forEach(member => {
+        html += member.getHTML();
+    });
+    console.log(html);
+    // function to create the HTML file
+    // fs.appendFile('index.html', data, (err) =>
+    //     err ? console.error('Error: ',err) : console.log('File created')
 };
 
 createTeam();
-
-
-
-
-// function to create the HTML file
-fs.appendFile('index.html', data, (err) =>
-    err ? console.error('Error: ',err) : console.log('File created')
-);
