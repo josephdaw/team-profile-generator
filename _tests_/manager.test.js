@@ -137,7 +137,7 @@ describe("Manager", () => {
 
     describe("getRole", () => {
         it("should return the manager's role", () => {
-            const manager = new Manager("Sarah", 1, "sarah@email.com");
+            const manager = new Manager("Sarah", 1, "sarah@email.com", 33);
             const mock = jest.spyOn(console, "log");
             mock.mockImplementation(() => { });
             const roleReturned = manager.getRole();
