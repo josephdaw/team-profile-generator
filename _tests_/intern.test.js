@@ -87,4 +87,71 @@ describe("Intern", () => {
       });
 
     });
+
+    // method tests
+    describe("getName", () => {
+        it("should return the intern's name", () => {
+            const intern = new Intern("Sarah", 1, "sarah@email.com", "Adelaide Uni");
+            const mock = jest.spyOn(console, "log");
+            mock.mockImplementation(() => { });
+            const nameReturned = intern.getName();
+
+            expect(nameReturned).toBe("Sarah");
+            expect(mock).toBeCalledWith(`Intern's name is Sarah.`);
+            mock.mockRestore();
+        });
+    });
+
+    describe("getId", () => {
+        it("should return the intern's id", () => {
+            const intern = new Intern("Sarah", 1, "sarah@email.com", "Adelaide Uni");
+            const mock = jest.spyOn(console, "log");
+            mock.mockImplementation(() => { });
+            const idReturned = intern.getId();
+
+            expect(idReturned).toBe(1);
+            expect(mock).toBeCalledWith(`Intern's ID is 1.`);
+            mock.mockRestore();
+        });
+    });
+
+    describe("getEmail", () => {
+        it("should return the intern's email", () => {
+            const intern = new Intern("Sarah", 1, "sarah@email.com", "Adelaide Uni");
+            const mock = jest.spyOn(console, "log");
+            mock.mockImplementation(() => { });
+            const emailReturned = intern.getEmail();
+
+            expect(emailReturned).toBe("sarah@email.com");
+            expect(mock).toBeCalledWith(`Intern's email is sarah@email.com.`);
+            mock.mockRestore();
+        });
+    });
+
+    describe("getRole", () => {
+        it("should return the intern's role", () => {
+            const intern = new Intern("Sarah", 1, "sarah@email.com", "Adelaide Uni");
+            const mock = jest.spyOn(console, "log");
+            mock.mockImplementation(() => { });
+            const roleReturned = intern.getRole();
+
+            expect(roleReturned).toBe("Intern");
+            expect(mock).toBeCalledWith(`Intern's role is Intern.`);
+            mock.mockRestore();
+        });
+    });
+
+    describe("getSchool", () => {
+        it("should return the intern's school.", () => {
+            const intern = new Intern("Sarah", 1, "sarah@email.com", "Adelaide Uni");
+            const mock = jest.spyOn(console, "log");
+            mock.mockImplementation(() => { });
+            const schoolReturned = intern.getSchool();
+
+            expect(schoolReturned).toBe("Adelaide Uni");
+            expect(mock).toBeCalledWith(`Intern's school is Adelaide Uni.`);
+            mock.mockRestore();
+        });
+    });
+
 });
