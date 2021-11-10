@@ -148,4 +148,17 @@ describe("Manager", () => {
         });
     });
 
+    describe("getOffice", () => {
+        it("should return the manager's office number", () => {
+            const manager = new Manager("Sarah", 1, "sarah@email.com", 33);
+            const mock = jest.spyOn(console, "log");
+            mock.mockImplementation(() => { });
+            const officeNumberReturned = manager.getOffice();
+
+            expect(officeNumberReturned).toBe(33);
+            expect(mock).toBeCalledWith(`Managers's office is 33.`);
+            mock.mockRestore();
+        });
+    });
+
 });
