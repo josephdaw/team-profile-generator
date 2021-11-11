@@ -32,10 +32,10 @@ htmlStart = `<!doctype html>
 htmlEnd = `</div>
 </main>
 
-<footer class="footer mt-auto py-3 bg-light">
-    <div class="container">
-        <span class="text-muted">Copyright 2021 Joseph Daw</span>
-    </div>
+<footer class="footer mt-auto py-3">
+<div class="container">
+    Copyright 2021 Joseph Daw
+</div>
 </footer>
 
 <!-- Bootstrap Bundle with Popper -->
