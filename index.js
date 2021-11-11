@@ -1,5 +1,5 @@
 const Team = require('./lib/team');
-const Html = require('./lib/html');
+const Html = require('./src/html');
 const fs = require('fs');
 
 const team = new Team();
@@ -15,7 +15,7 @@ const createTeam = async () => {
     console.log(htmlDoc);
 
     // function to create the HTML file
-    fs.appendFile('./dist/index.html', htmlDoc, (err) =>
+    fs.writeFile('./dist/index.html', htmlDoc, (err) =>
         err ? console.error('Error: ',err) : console.log('File created'))
 };
 
