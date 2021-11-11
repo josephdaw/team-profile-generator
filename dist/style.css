@@ -29,16 +29,12 @@ footer {
     gap: 20px;
 }
 
-.card-body {
-  background-color: hsl(211, 27%, 70%);
-}
-
 .manager {
   background-color: hsl(360, 77%, 78%);
 }
 
 .engineer {
-  background-color: hsl(221, 78%, 86%);
+  background-color: hsl(211, 27%, 70%);
 }
 
 .intern {
