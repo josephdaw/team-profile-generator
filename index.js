@@ -12,8 +12,6 @@ const createTeam = async () => {
     });
     const htmlDoc = Html.htmlStart + htmlTeam + Html.htmlEnd;
 
-    console.log(htmlDoc);
-
     // function to create the HTML file
     fs.writeFile('./dist/index.html', htmlDoc, (err) =>
         err ? console.error('Error: ',err) : console.log('File created'))
