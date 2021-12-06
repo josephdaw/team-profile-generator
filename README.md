@@ -13,7 +13,7 @@
 ## Description
 Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. The first member will be the team manager. You can then add as many engineers and/or interns as required.
 
-For a video demonstation of how to install the application and generate a README file, please click below:
+For a video demonstration of how to install the application and generate a README file, please click below:
 [![Walk through video screenshot](./src/walk-through.png)](https://drive.google.com/file/d/1Lt1gtRQ90DqJprrCsYCEui_-sxtX0Knz/view?usp=sharing "Walk Through Video")
 
 ## Installation
@@ -26,7 +26,7 @@ Ensure you have saved the following files and folders to your desired directory:
 - package.json
 - package-lock.json
 
-Once you have your directory set up. Ensure you have navigated to that location in the terminal. Run the command `npm install` or the shorter version `npm i`. This will install all the dependancies for the project.
+Once you have your directory set up. Ensure you have navigated to that location in the terminal. Run the command `npm install` or the shorter version `npm i`. This will install all the dependencies for the project.
 
 ## Usage
 You initialise the application by running the command `node index.js`. 
